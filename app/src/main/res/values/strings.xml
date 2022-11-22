@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ESEC CGPA Calculator</string>
+    <string name="gpa"><u>Calculate Your GPA</u></string>
+    <string name="cgpa"><u>Calculate Your CGPA</u></string>
+    <string name="result"><u>Result</u></string>
+
+</resources>
