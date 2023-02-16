@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".getresult">
+    android:layout_margin="10dp"
+    tools:context="com.rishav.eseccgpagenerator.getresult">
 
     <Button
         android:id="@+id/back"
         android:layout_width="49dp"
         android:layout_height="36dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:background="@drawable/back"
         android:drawablePadding="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gotohome"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gotohome"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
@@ -24,6 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:textColor="#EC239B"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,12 +36,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="88dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
@@ -99,7 +104,7 @@
                 android:layout_marginEnd="68dp"
                 android:text="100 %"
                 android:textColor="#000000"
-                android:textSize="34sp" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -119,11 +124,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="341dp"
-        android:layout_height="373dp"
+        android:layout_width="297dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.876"
         app:srcCompat="@drawable/win" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

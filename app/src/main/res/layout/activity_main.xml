@@ -4,10 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.rishav.eseccgpagenerator.MainActivity">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,20 +41,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="20dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
+                    android:layout_width="63dp"
+                    android:layout_height="61dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     app:srcCompat="@drawable/esec" />
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="201dp"
                     android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
@@ -60,8 +66,8 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="90dp"
-                    android:layout_height="80dp"
+                    android:layout_width="75dp"
+                    android:layout_height="69dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     app:srcCompat="@drawable/r"
@@ -73,12 +79,47 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="40dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Enter your number of Grades"
                 android:textColor="#000000"
                 android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/subject"
+                    android:layout_width="281dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/armata"
+                    android:gravity="center_vertical"
+                    android:text="Subjects Passed"
+                    android:textColor="#287C2C"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/subj"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:minWidth="50dp"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -120,9 +161,9 @@
 
                     <TextView
                         android:id="@+id/aplus"
-                        android:layout_width="wrap_content"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/armata"
                         android:text="A+  "
                         android:textColor="#9910A3"
@@ -133,14 +174,14 @@
                         android:layout_width="60dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:ems="10"
                         android:background="@drawable/btn"
-                        android:padding="5dp"
-                        android:textSize="34sp"
-                        android:textColor="#000000"
+                        android:ems="10"
                         android:inputType="number"
                         android:maxLength="2"
                         android:minWidth="50dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="34sp"
                         tools:ignore="SpeakableTextPresentCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -167,13 +208,13 @@
                     android:id="@+id/a_edtxt"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
+                    android:background="@drawable/btn"
                     android:ems="10"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:textColor="#000000"
                     android:minWidth="50dp"
-                    android:background="@drawable/btn"
                     android:padding="5dp"
+                    android:textColor="#000000"
                     android:textSize="34sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -185,9 +226,9 @@
 
                     <TextView
                         android:id="@+id/bplus"
-                        android:layout_width="wrap_content"
+                        android:layout_width="81dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/armata"
                         android:text="B+  "
                         android:textColor="#9910A3"
@@ -197,13 +238,13 @@
                         android:id="@+id/bplus_edtxt"
                         android:layout_width="60dp"
                         android:layout_height="match_parent"
+                        android:background="@drawable/btn"
                         android:ems="10"
                         android:inputType="number"
-                        android:background="@drawable/btn"
-                        android:textColor="#000000"
-                        android:padding="5dp"
-                        android:textSize="34sp"
                         android:maxLength="2"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="34sp"
                         tools:ignore="SpeakableTextPresentCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -230,14 +271,14 @@
                     android:id="@+id/b_edtxt"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
+                    android:background="@drawable/btn"
                     android:ems="10"
                     android:inputType="number"
                     android:maxLength="2"
-                    android:background="@drawable/btn"
-                    android:textColor="#000000"
-                    android:padding="5dp"
-                    android:textSize="34sp"
                     android:minWidth="50dp"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
